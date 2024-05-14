@@ -1,5 +1,7 @@
 name: 'Draw.io Render Action'
 description: 'A GitHub Action to render Draw.io diagrams to PNG using XVFB'
+icon: pie-chart
+color: orange
 inputs:
   input_path:
     description: 'The path to the Draw.io files'
