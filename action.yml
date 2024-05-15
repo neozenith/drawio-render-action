@@ -1,16 +1,15 @@
 name: 'Draw.io Render Action'
 description: 'A GitHub Action to render Draw.io diagrams to PNG using XVFB'
-icon: pie-chart
-color: orange
+
 inputs:
   input_path:
     description: 'The path to the Draw.io files'
     required: true
-    default: '.'
+    default: './docs/diagrams'
   output_path:
     description: 'The path to save the rendered PNG files'
     required: true
-    default: './output'
+    default: './docs/png'
 runs:
   using: 'docker'
   image: 'Dockerfile'
