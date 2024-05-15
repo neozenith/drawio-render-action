@@ -40,4 +40,22 @@ jobs:
       with:
         name: drawio-pngs
         path: docs/pngs
+
+    # Optional Step to commit rendered files
+    # Not necessary when building GH Pages as the generated output
+    # gets published as an artifact and not logner need to commit back
+    # This is useful if you want up to date diagrams in your GH Markdown files.
+    # - name: Commit and Push Rendered Diagrams
+    #   run: |
+    #     git config --global user.name 'github-actions[bot]'
+    #     git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+    #     git add .
+    #     git commit -m "Render Draw.io diagrams"
+    #     git push
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
+
+## Example Output
+
+![architecture-example](docs/png/architecture-example.png)
