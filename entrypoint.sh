@@ -1,12 +1,12 @@
 #!/bin/sh -l
 
-input_path=$1
-output_path=$2
+# input_path=$1
+# output_path=$2
 
-echo "Input path: $input_path"
-echo "Output path: $output_path"
+echo "Input path: $INPUT_PATH"
+echo "Output path: $OUTPUT_PATH"
 
-mkdir -p $output_path
+mkdir -p $OUTPUT_PATH
 
 Xvfb :99 -screen 0 1280x1024x24 &
 export DISPLAY=:99

@@ -5,7 +5,7 @@ build:
 	docker build -t my-action .
 
 test: build
-	docker run -e "INPUT_PATH=docs/diagrams" -e "OUTPUT_PATH=./docs/png" my-action
+	docker run -e "INPUT_PATH=./docs/diagrams" -e "OUTPUT_PATH=./docs/png" my-action
 
 all: clean test
 
