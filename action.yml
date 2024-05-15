@@ -13,6 +13,9 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.input_path }}
+    - ${{ inputs.output_path }}
 
 branding:
   icon: 'pie-chart'
